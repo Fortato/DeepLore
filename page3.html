@@ -28,85 +28,85 @@
       </tr>
     </table>
     <font size=7>
-    <h2 align=left>
-      <script language="JavaScript1.2">
-        //Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
-        //visit http://www.beta-cc.de
-        //Visit http://www.dynamicdrive.com for this script 
-        var message = "Common Races"
-        var neonbasecolor = "#FFFFFF"
-        var neontextcolor = "#25b84c"
-        var neontextcolor2 = "#40f771"
-        var flashspeed = 69						// speed of flashing in milliseconds
-        var flashingletters = 3						// number of letters flashing in neontextcolor
-        var flashingletters2 = 1						// number of letters flashing in neontextcolor2 (0 to disable)
-        var flashpause = 0						// the pause between flash-cycles in milliseconds
-        ///No need to edit below this line/////
-        var n = 0
-        if (document.all || document.getElementById) {
-          document.write('<font color="' + neonbasecolor + '">')
-          for (m = 0; m < message.length; m++)
-            document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
-          document.write('</font>')
-        }
-        else
-          document.write(message)
-        function crossref(number) {
-          var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
-          return crossobj
-        }
-        function neon() {
-          //Change all letters to base color
-          if (n == 0) {
+      <h2 align=left>
+        <script language="JavaScript1.2">
+          //Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+          //visit http://www.beta-cc.de
+          //Visit http://www.dynamicdrive.com for this script 
+          var message = "Common Races‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎Rare Races‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ ‎ ‎Uncommon Races"
+          var neonbasecolor = "#FFFFFF"
+          var neontextcolor = "#25b84c"
+          var neontextcolor2 = "#40f771"
+          var flashspeed = 69						// speed of flashing in milliseconds
+          var flashingletters = 3						// number of letters flashing in neontextcolor
+          var flashingletters2 = 1						// number of letters flashing in neontextcolor2 (0 to disable)
+          var flashpause = 0						// the pause between flash-cycles in milliseconds
+          ///No need to edit below this line/////
+          var n = 0
+          if (document.all || document.getElementById) {
+            document.write('<font color="' + neonbasecolor + '">')
             for (m = 0; m < message.length; m++)
-              crossref(m).style.color = neonbasecolor
+              document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
+            document.write('</font>')
           }
-          //cycle through and change individual letters to neon color
-          crossref(n).style.color = neontextcolor
-          if (n > flashingletters - 1) crossref(n - flashingletters).style.color = neontextcolor2
-          if (n > (flashingletters + flashingletters2) - 1) crossref(n - flashingletters - flashingletters2).style.color = neonbasecolor
-          if (n < message.length - 1)
-            n++
-          else {
-            n = 0
-            clearInterval(flashing)
-            setTimeout("beginneon()", flashpause)
-            return
+          else
+            document.write(message)
+          function crossref(number) {
+            var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
+            return crossobj
           }
-        }
-        function beginneon() {
-          if (document.all || document.getElementById)
-            flashing = setInterval("neon()", flashspeed)
-        }
-        beginneon()
-      </script>
-    </h2>
+          function neon() {
+            //Change all letters to base color
+            if (n == 0) {
+              for (m = 0; m < message.length; m++)
+                crossref(m).style.color = neonbasecolor
+            }
+            //cycle through and change individual letters to neon color
+            crossref(n).style.color = neontextcolor
+            if (n > flashingletters - 1) crossref(n - flashingletters).style.color = neontextcolor2
+            if (n > (flashingletters + flashingletters2) - 1) crossref(n - flashingletters - flashingletters2).style.color = neonbasecolor
+            if (n < message.length - 1)
+              n++
+            else {
+              n = 0
+              clearInterval(flashing)
+              setTimeout("beginneon()", flashpause)
+              return
+            }
+          }
+          function beginneon() {
+            if (document.all || document.getElementById)
+              flashing = setInterval("neon()", flashspeed)
+          }
+          beginneon()
+        </script>
+      </h2>
     </font>
-  <center>
-    <table align=left border=2 bgcolor=#000000>
-      <tr>
-        <td colspan="6">
-          <center>
-            </font>
-        </td>
-      </tr>
+    <center>
+      <table align=left border=2 bgcolor=#000000>
+        <tr>
+          <td colspan="6">
+            <center>
+              </font>
+          </td>
+        </tr>
+    </center>
+    <tr>
+      <td>
+        <font size=4 color="#FFFFFF">
+          <center><b>Etreans</b>
+      </td>
   </center>
-  <tr>
-    <td>
-      <font size=4 color="#FFFFFF">
-        <center><b>Etreans</b>
-    </td>
-    </center>
-    <td>
-      <font size=4 color="#FFFFFF">
-        <center><b>Celtors</b>
-    </td>
-    </center>
-    <td>
-      <font size=4 color="#FFFFFF">
-        <center><b>Adret</b>
-    </td>
-    </center>
+  <td>
+    <font size=4 color="#FFFFFF">
+      <center><b>Celtors</b>
+  </td>
+  </center>
+  <td>
+    <font size=4 color="#FFFFFF">
+      <center><b>Adret</b>
+  </td>
+  </center>
   <tr>
     <td>
       <font size="2" color=#FFFFFF><i>Etreans are
@@ -146,73 +146,6 @@
   </table>
   </h1>
   </center>
-  <font size=7>
-  <h2 align=right><script language="JavaScript1.2">
-
-//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
-//visit http://www.beta-cc.de
-//Visit http://www.dynamicdrive.com for this script 
-
-var message="‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Uncommon Races"
-var neonbasecolor="#FFFFFF"
-var neontextcolor="#25b84c"
-var neontextcolor2="#40f771"
-var flashspeed=100						// speed of flashing in milliseconds
-var flashingletters=3						// number of letters flashing in neontextcolor
-var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
-var flashpause=0						// the pause between flash-cycles in milliseconds
-
-///No need to edit below this line/////
-
-var n=0
-if (document.all||document.getElementById){
-document.write('<font color="'+neonbasecolor+'">')
-for (m=0;m<message.length;m++)
-document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
-document.write('</font>')
-}
-else
-document.write(message)
-
-function crossref(number){
-var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
-return crossobj
-}
-
-function neon(){
-
-//Change all letters to base color
-if (n==0){
-for (m=0;m<message.length;m++)
-crossref(m).style.color=neonbasecolor
-}
-
-//cycle through and change individual letters to neon color
-crossref(n).style.color=neontextcolor
-
-if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
-if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
-
-
-if (n<message.length-1)
-n++
-else{
-n=0
-clearInterval(flashing)
-setTimeout("beginneon()",flashpause)
-return
-}
-}
-
-function beginneon(){
-if (document.all||document.getElementById)
-flashing=setInterval("neon()",flashspeed)
-}
-beginneon()
-
-
-</script></h2>
-  </font>
   <table align=right border=2 bgcolor=#000000>
     <tr>
       <td>
@@ -256,13 +189,13 @@ beginneon()
         <img width=200 height=250 src=gremor.png>
       </td>
     </tr>
-    <center>
-      <table border=2 bgcolor=#000000>
-        <tr>
-          <td colspan="5">
-              </font>
-          </td>
-        </tr>
+  </table>
+  <table align=center border=2 bgcolor=#000000>
+    <tr>
+      <td colspan="5">
+        </font>
+      </td>
+    </tr>
     <tr>
       <td>
         <font size=4 color=#FFFFFF>
@@ -291,13 +224,26 @@ beginneon()
       </td>
     <tr>
       <td>
-        <font size="2" color=#FFFFFF><i>Felinors are well known for their <br>catlike ears and noises. When hurt, <br>instead of a normal "gah" or similar, <br>felinors make cat sounds such as <br>"nyah". They can also climb better, <br>especially on wooden surfaces, <br>and are more stealthy. Very little is <br>known about Felinors.</i>
+        <font size="2" color=#FFFFFF><i>Felinors are well known for their <br>catlike ears and noises. When hurt,
+            <br>instead of a normal "gah" or similar, <br>felinors make cat sounds such as <br>"nyah". They can also
+            climb better, <br>especially on wooden surfaces, <br>and are more stealthy. Very little is <br>known about
+            Felinors.</i>
       </td>
       <td>
-        <font size="2" color=#FFFFFF><i>Vesperian are a buglike race. They <br>are never seen without their masks<br> on, wearing them over helmets and <br>keeping facial accessories off. They <br>have a small layer of natural armor<br> that regenerates itself at campfires.<br> If a Vesperian becomes a blindseer, <br>their mask will turn golden instead<br> of the normal mark of a blindseer.<br> A statue outside of Greathive Aratel <br>can also be seen sporting this special <br>mask. Their masks are organic and <br>grow over time. They have ganymede <br>like eyes under their masks and can be<br> cousins with ganymedes. Aeons ago <br>they were given Lifeweaving and <br>turned their backs on the tides to <br>grow living greathives where they<br> currently live. Some Vesperians,<br> however, returned back to the <br>waves. These sunken Vesperians <br>became known as the Ganymedes, <br>losing their masks in the process.</i>
+        <font size="2" color=#FFFFFF><i>Vesperian are a buglike race. They <br>are never seen without their masks<br>
+            on, wearing them over helmets and <br>keeping facial accessories off. They <br>have a small layer of natural
+            armor<br> that regenerates itself at campfires.<br> If a Vesperian becomes a blindseer, <br>their mask will
+            turn golden instead<br> of the normal mark of a blindseer.<br> A statue outside of Greathive Aratel <br>can
+            also be seen sporting this special <br>mask. Their masks are organic and <br>grow over time. They have
+            ganymede <br>like eyes under their masks and can be<br> cousins with ganymedes. Aeons ago <br>they were
+            given Lifeweaving and <br>turned their backs on the tides to <br>grow living greathives where they<br>
+            currently live. Some Vesperians,<br> however, returned back to the <br>waves. These sunken Vesperians
+            <br>became known as the Ganymedes, <br>losing their masks in the process.</i>
       </td>
       <td>
-        <font size="2" color=#FFFFFF><i>Capra</i>
+        <font size="2" color=#FFFFFF><i>Capras wear a bone mask<br> covering their face. One of these<br>masks does not
+            have teeth while<br>the rest do. They share the seas<br>sharing knowledge to those who<br>need it. They also
+            are keepers of<br> ancient secrets.</i>
       </td>
       <td>
         <font size="2" color=#FFFFFF><i>Ganymede</i>
@@ -314,12 +260,12 @@ beginneon()
         <img width=200 height=250 src=vesperian.png>
       </td>
       <td>
-        <img width=225 height=250 src=capra.png>
+        <img src=capra.png>
       <td>
         <img width=200 height=250 src=ganymede.png>
       </td>
       <td>
         <img width=200 height=250 src=khan.png>
-          </center>
+        </center>
       </td>
     </tr>
