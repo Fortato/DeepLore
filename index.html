@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>DeepLore</title>
+</head>
+
+<body background="bg.png">
+  <nav>
+    <div class="heading">
+      <a href=index.html><img src=logo.png></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="page2.html">Clans</a></li>
+      <li><a href="page3.html">Races</a></li>
+      <li><a href="monsters.html">Monsters</a></li>
+    </ul>
+  </nav>
+  <br>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="lordregent.png" style="width:100%">
+      <div class="text">The Lord Regent</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="layer2bridge.jpg" style="width:100%">
+      <div class="text">The Depths: Layer 2</div>
+    </div>
+    <div class="mySlides fade">
+      <img src="depthscity.png" style="width:100%">
+      <div class="text">The Celtorian City</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+  <center>
+    <table border=1>
+      <tr>
+        <td colspan="3">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src=homebanner.png>
+        </td>
+      </tr>
+    </table>
+  </center>
+  <font color=FFFFFF size=2>
+    <center>
+      <table border=1 bgcolor=#000000>
+        <tr>
+          <td colspan="3">
+            <center>
+  </font>
+  </td>
+  </tr>
+  </center>
+    <br><br>
+  <tr>
+    <td>
+      <font size=3 family="fondamento" color="#FFFFFF">
+        <center>Welcome to <b>DeepLore</b><br>This site is dedicated to keeping track of all things Deepwoken lore.
+          <br>Currently I am working on the <a href=page3.html>races</a> however in the future I plan to have a page
+          for<br>
+          <a href="">clans</a>, <a href="page3.html">races</a>, <a href="">quests</a>, <a href="">monsters</a>, <a
+            href="">locations</a>, and of course <a href="">the war</a>. <br>I also wanted to give a huge thank you to
+          the deepwoken info and deepwoken fandom teams. <br>They were both a huge help in finding a large amount of the
+          lore I have listed here. <br>I designed and drew everything on this website, so if you want to see more of my
+          work check me out on <a href="https://youtube.com/c/deadlyfortato">youtube</a>! <br>I've spent a lot of time
+          on
+          this so I would really appreciate it if you left a sub :D <br>If you notice anything
+          wrong lore wise feel free to dm or email me, my contact
+          information is down below. <br>If you would like to join me and my guild the invite is <a
+            href="https://discord.gg/EVsVmKTuVz">Here</a> <br>I hope you enjoy learning more about the amazing lore of this
+          game as much as I enjoyed learning it to make this website!
+    </td>
+    </font>
+    </td>
+  </tr>
+  </table>
+  </font>
+  </center>
+  <right>
+    <br>
+    <table border=1 bgcolor=#000000>
+      <tr>
+        <td colspan="3">
+          <right>
+      <tr>
+        <td>
+          <font size=2 family="fondamento" color=#FFFFFF>
+            <right>Thank you to Deepwoken Info for providing a large amount of information: <a
+                href="https://discord.gg/deepwokeninfo">Discord</a><br> Also thank you to Deepwoken Fandom for most of
+              the
+              info: <a href="https://deepwoken.fandom.com/wiki/Deepwoken_Wiki">Fandom</a></right>
+        </td>
+      </tr>
+  </right>
+  <center>
+  </center>
+  <table align=right border=1 bgcolor=#000000>
+    <tr>
+      <td colspan="3">
+    <tr>
+      <td>
+        <font size=2 family="fondamento" color=#FFFFFF>Add me on discord: Fortato#9296<br>Email me here:
+          fortatobusiness@gmail.com</font>
+      </td>
+    </tr>
+    </td>
+    </tr>
+  </table>
+  <center><a href="https://discord.gg/EVsVmKTuVz"><img src=advert.png></a></center>
+</body>
+
+</html>

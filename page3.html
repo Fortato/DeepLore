@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>DeepLore</title>
+</head>
+
+<body background="bg.png">
+  <nav>
+    <div class="heading">
+      <a href=index.html><img src=logo.png></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="page2.html">Clans</a></li>
+      <li><a href="page3.html">Races</a></li>
+      <li><a href="monsters.html">Monsters</a></li>
+    </ul>
+  </nav>
+  <center>
+    <table align=center border=2>
+      <tr>
+        <td><img src=banner3.png>
+        </td>
+      </tr>
+    </table>
+    <font size=7>
+    <h2 align=left>
+      <script language="JavaScript1.2">
+        //Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+        //visit http://www.beta-cc.de
+        //Visit http://www.dynamicdrive.com for this script 
+        var message = "Common Races"
+        var neonbasecolor = "#FFFFFF"
+        var neontextcolor = "#25b84c"
+        var neontextcolor2 = "#40f771"
+        var flashspeed = 69						// speed of flashing in milliseconds
+        var flashingletters = 3						// number of letters flashing in neontextcolor
+        var flashingletters2 = 1						// number of letters flashing in neontextcolor2 (0 to disable)
+        var flashpause = 0						// the pause between flash-cycles in milliseconds
+        ///No need to edit below this line/////
+        var n = 0
+        if (document.all || document.getElementById) {
+          document.write('<font color="' + neonbasecolor + '">')
+          for (m = 0; m < message.length; m++)
+            document.write('<span id="neonlight' + m + '">' + message.charAt(m) + '</span>')
+          document.write('</font>')
+        }
+        else
+          document.write(message)
+        function crossref(number) {
+          var crossobj = document.all ? eval("document.all.neonlight" + number) : document.getElementById("neonlight" + number)
+          return crossobj
+        }
+        function neon() {
+          //Change all letters to base color
+          if (n == 0) {
+            for (m = 0; m < message.length; m++)
+              crossref(m).style.color = neonbasecolor
+          }
+          //cycle through and change individual letters to neon color
+          crossref(n).style.color = neontextcolor
+          if (n > flashingletters - 1) crossref(n - flashingletters).style.color = neontextcolor2
+          if (n > (flashingletters + flashingletters2) - 1) crossref(n - flashingletters - flashingletters2).style.color = neonbasecolor
+          if (n < message.length - 1)
+            n++
+          else {
+            n = 0
+            clearInterval(flashing)
+            setTimeout("beginneon()", flashpause)
+            return
+          }
+        }
+        function beginneon() {
+          if (document.all || document.getElementById)
+            flashing = setInterval("neon()", flashspeed)
+        }
+        beginneon()
+      </script>
+    </h2>
+    </font>
+  <center>
+    <table align=left border=2 bgcolor=#000000>
+      <tr>
+        <td colspan="6">
+          <center>
+            </font>
+        </td>
+      </tr>
+  </center>
+  <tr>
+    <td>
+      <font size=4 color="#FFFFFF">
+        <center><b>Etreans</b>
+    </td>
+    </center>
+    <td>
+      <font size=4 color="#FFFFFF">
+        <center><b>Celtors</b>
+    </td>
+    </center>
+    <td>
+      <font size=4 color="#FFFFFF">
+        <center><b>Adret</b>
+    </td>
+    </center>
+  <tr>
+    <td>
+      <font size="2" color=#FFFFFF><i>Etreans are
+          one of the most common <br>races in deepwoken. They are <br>distinguished by their snake like<br> eyes, pale
+          white skin and general <br>distaste
+          towards other races. Their <br>population has grown so large that <br>they have an entire luminant named
+          <br>after them, being
+          the Etrean Luminant. <br>The Etreans mainly live in Etris and <br>The Isle of Vigils. The Isle of Vigils<br>
+          was a part of
+          Etris before it broke off <br>and floated away. Most Etreans are <br>wary of outsiders.<br></i>
+    </td></a>
+    <td>
+      <font size="2" color=#FFFFFF><i>Celtors are a
+          race drowned into the <br>depths below the seas. They have <br>raccoon like features and are good <br>with
+          handling boat creation and seafare. <br>Celtors are known for being rich, <br>greedy and prideful. They lived
+          in a <br>city named The Celtorian City.
+          Their <br>city was very wealthy and had the best <br>navy around, however they drowned in <br>their glory when
+          the Celtorian Horror <br>appeared. Many celtors have gone
+          mad <br>from the insanity the depths causes on <br>ones
+          mind and the few left tell tales of <br>the eldritch beast with a mass of <br>tentacles and a beak that erased
+          the <br>Celtorian City from the world.<br></i>
+    </td></a>
+    <td>
+      <font size="2" color=#FFFFFF><i>Adrets are a race that has only recently <br>arrived on the Etrean
+          Luminant.
+          Unlike <br>most other races, they do not have any <br>animal like features. Adrets have blue <br>skin with
+          orange eyes. They are known <br>for being bureaucrats and having higher <br>reputation with all clans. They
+          also <br>"understand their destiny" and as such <br>learning new things comes naturally to <br>them. When
+          Adrets come of age, they <br>are given a tattoo that represents the <br>path of life they seek. The
+          Authority's <br>elite members are all Adrets. <br></i>
+    </td></a>
+  <tr>
+    <td><img width=200 height=250 src=etrean.png></td>
+    <td><img width=200 height=250 src=celtor.png></td>
+    <td><img src=adret.png></td>
+  </tr>
+  </table>
+  </h1>
+  </center>
+  <font size=7>
+  <h2 align=right><script language="JavaScript1.2">
+
+//Neon Lights Text II by G.P.F. (gpf@beta-cc.de)
+//visit http://www.beta-cc.de
+//Visit http://www.dynamicdrive.com for this script 
+
+var message="‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ Uncommon Races"
+var neonbasecolor="#FFFFFF"
+var neontextcolor="#25b84c"
+var neontextcolor2="#40f771"
+var flashspeed=100						// speed of flashing in milliseconds
+var flashingletters=3						// number of letters flashing in neontextcolor
+var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
+var flashpause=0						// the pause between flash-cycles in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",flashpause)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script></h2>
+  </font>
+  <table align=right border=2 bgcolor=#000000>
+    <tr>
+      <td>
+        <font size=4 color=#FFFFFF>
+          <center><b>Canor</b>
+      </td>
+      </center>
+      <td>
+        <font size=4 color=#FFFFFF>
+          <center><b>Gremor</b>
+      </td>
+      </center>
+    <tr>
+      <td>
+        <font size="2" color=#FFFFFF><i>Canors are a race known for their
+            <br>fierce loyalty. They are often seen <br>as
+            guards or servents. Canors are <br>distinguished by their dog or wolf<br> like features. They used to be
+            guards<br> for
+            the Central Authority however<br> this relationship has since ended. <br>They are also known for their heavy
+            <br> weaponry
+            being the Zweihänder, <br>Pale Morning, and Canorian Axe. <br>Today you can find a Canor at <br>almost every
+            town buying
+            "shiny <br>things" from you. This includes gems <br>such as amethysts, emeralds, etc. and <br>mantra
+            modifiers.</i>
+      </td>
+      <td>
+        <font size="2" color=#FFFFFF><i>Gremors are known for being <br>peaceful nomads. They are seen<br> camping out
+            around the Etrean <br>Wilds and Summer Isles. Gremors <br>have deer like horns. Their isn't a <br>single
+            Gremor that is part of the <br>Authority. They follow the god <br>"Navae" who provides a compass <br>and
+            light when blind. The compass<br> points towards Navae who resides<br> in the Southern Luminant. They<br>
+            have developed a fist technique <br>being the Way of Navae, which has<br> a basic punch and drop kick
+            critical<br> attack. They also use a gremorian <br>longspear which features basic <br>foward swings as well
+            as a pulling <br>critical attack. </i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img width=175 height=250 src="canor.png">
+      </td>
+      <td>
+        <img width=200 height=250 src=gremor.png>
+      </td>
+    </tr>
+    <center>
+      <table border=2 bgcolor=#000000>
+        <tr>
+          <td colspan="5">
+              </font>
+          </td>
+        </tr>
+    <tr>
+      <td>
+        <font size=4 color=#FFFFFF>
+          <center><b>Felinor</b>
+      </td>
+      </center>
+      <td>
+        <font size=4 color="#FFFFFF">
+          <center><b>Vesperian</b>
+      </td>
+      </center>
+      <td>
+        <font size=4 color="#FFFFFF">
+          <center><b>Capra</b>
+      </td>
+      </center>
+      <td>
+        <font size=4 color="#FFFFFF">
+          <center><b>Ganymede</b>
+      </td>
+      </center>
+      <td>
+        <font size=4 color="#FFFFFF">
+          <center><b>Khan</b>
+          </center>
+      </td>
+    <tr>
+      <td>
+        <font size="2" color=#FFFFFF><i>Felinors are well known for their <br>catlike ears and noises. When hurt, <br>instead of a normal "gah" or similar, <br>felinors make cat sounds such as <br>"nyah". They can also climb better, <br>especially on wooden surfaces, <br>and are more stealthy. Very little is <br>known about Felinors.</i>
+      </td>
+      <td>
+        <font size="2" color=#FFFFFF><i>Vesperian are a buglike race. They <br>are never seen without their masks<br> on, wearing them over helmets and <br>keeping facial accessories off. They <br>have a small layer of natural armor<br> that regenerates itself at campfires.<br> If a Vesperian becomes a blindseer, <br>their mask will turn golden instead<br> of the normal mark of a blindseer.<br> A statue outside of Greathive Aratel <br>can also be seen sporting this special <br>mask. Their masks are organic and <br>grow over time. They have ganymede <br>like eyes under their masks and can be<br> cousins with ganymedes. Aeons ago <br>they were given Lifeweaving and <br>turned their backs on the tides to <br>grow living greathives where they<br> currently live. Some Vesperians,<br> however, returned back to the <br>waves. These sunken Vesperians <br>became known as the Ganymedes, <br>losing their masks in the process.</i>
+      </td>
+      <td>
+        <font size="2" color=#FFFFFF><i>Capra</i>
+      </td>
+      <td>
+        <font size="2" color=#FFFFFF><i>Ganymede</i>
+      </td>
+      <td>
+        <font size="2" color=#FFFFFF><i>Khan</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img width=200 height=250 src=felinor.png>
+      </td>
+      <td>
+        <img width=200 height=250 src=vesperian.png>
+      </td>
+      <td>
+        <img width=225 height=250 src=capra.png>
+      <td>
+        <img width=200 height=250 src=ganymede.png>
+      </td>
+      <td>
+        <img width=200 height=250 src=khan.png>
+          </center>
+      </td>
+    </tr>
